@@ -1,0 +1,611 @@
+<html>
+
+<head>
+  <title>NorthBay Bookstore</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!--Animate.CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+  <!-- Owl Carousel -->
+  <link href="./owl/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css">
+  <link href="./owl/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css">
+
+  <!-- Parallax -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--Bootstrap-->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!--Google and Facebook Buttons-->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  
+
+</head>
+
+<body>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#" style="font-size: 20px; margin: auto; line-height: 35px;">❦ NorthBay Bookstore</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a href="#about">About</a>
+        <a href="#bestsellers">Bestsellers</a>
+        <a href="#team">Team</a>
+        <a href="#services">Services</a>
+        <a href="#trusted">Trusted</a>
+
+
+        <input style="font-family: 'Nunito', sans-serif; border-radius: 5px;" type="text" placeholder="Search..." name="search" class="searchbar">
+        <button style="font-family: 'Nunito', sans-serif;" type="submit" class="searchbar">
+        <i class="fa fa-search" style="color: #000000"></i></button>
+
+        <a href="#shoppingcart"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <i class="fas fa-user searchbar"></i>
+
+
+        <button type="button" class="btn btn-primary loginbtn" data-toggle="modal" data-target="#exampleModal" style="max-height: 20px; font-size: 12px; background: #FFFFFF; color: #22333B; border-color: #BEB4AA">
+          Log In
+        </button>
+
+      </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background: #FFFFFF">
+
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Log In</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 sign-in">
+              <p style="font-family: 'Nunito', sans-serif;">Log into your NorthBay Account.</p>
+              <span><div class="g-signin2" data-onsuccess="onSignIn"></div></span>
+              
+              <h3 class = "modal-adjust"><span class = "modal-adjust">OR</span></h3>
+              
+              
+              <form>
+                <div class="form-group">
+                  <label style="font-family: 'Nunito', sans-serif;" for="exampleInputEmail1">Email address</label>
+                  <input style="font-family: 'Nunito', sans-serif; font-size: 12px;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label style="font-family: 'Nunito', sans-serif;" for="exampleInputPassword1">Password</label>
+                  <input style="font-family: 'Nunito', sans-serif; font-size: 12px;" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+              </form>
+              
+              <a href="#"><p style="font-family: 'Nunito', sans-serif; font-size: 12px;">Don't have a NorthBay Account? Sign up here.</p></a>
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-size: 12px;">Close</button>
+          <button type="button" class="btn btn-primary" style="font-size: 12px;">Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .parallax {
+      /* The image used */
+      background-image: url("bookstore.jpg");
+
+      /* Set a specific height */
+      min-height: 900px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <div class="parallax"></div>
+  <div class="container-fluid transparent" style="width:100%">
+    <div class="centered">Welcome to<br>NorthBay Bookstore<br>❦</div>
+  </div>
+
+  <!--About-->
+  <a name="about"></a>
+  <div id="about" class="container-fluid">
+    <div class="row transparent">
+      <div class="col-sm-12">
+        <div class="container-fluid ">
+          <span><img src="bookstore-interior.jpg" alt="Snow" style="width:100%;"></span>
+          <div class="about-centered">
+            <p>Locally owned. Expansive selection. Affordable prices.</p>
+
+            <i class="fas fa-book"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!--Bestsellers-->
+  <a name="bestsellers"></a>
+  <div id="bestsellers" class="container">
+
+    <h3 class="hunger" style="font-family: 'Merriweather', serif;">Bestsellers</h3>
+    <style>
+      .h3 {
+        text-align: center;
+      }
+    </style>
+    <p style="font-family: 'Nunito', sans-serif;">Our store offers all the current bestselling novels at the cheapest prices.</p>
+
+
+    <div class="owl-carousel owl-theme" id="owl-demo">
+      <div>
+        <div class="owl-text-overlay hidden-xs">
+          <h2 class="owl-title">The Hunger Games</h2>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Paperback $10</p>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Hardcover $15</p>
+          <div class="buy">
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="button" class="btn btn-outline-success">Add to cart</button>
+          </div>
+        </div><img class="owl-img" src="hungergames1.jpg">
+      </div>
+
+      <div>
+        <div class="owl-text-overlay hidden-xs">
+          <h2 class="owl-title">Legend</h2>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Paperback $6</p>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Hardcover $10</p>
+          <div class="buy">
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="button" class="btn btn-outline-success">Add to cart</button>
+          </div>
+        </div><img class="owl-img" src="legend.jpg">
+      </div>
+
+      <div>
+        <div class="owl-text-overlay hidden-xs">
+          <h2 class="owl-title">Divergent</h2>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Paperback $10</p>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Hardcover $15</p>
+          <div class="buy">
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="button" class="btn btn-outline-success">Add to cart</button>
+          </div>
+        </div><img class="owl-img" src="divergent.jpg">
+      </div>
+
+      <div>
+        <div class="owl-text-overlay hidden-xs">
+          <h2 class="owl-title">Hidden Figures</h2>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Paperback $7</p>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Hardcover $10</p>
+          <div class="buy">
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="button" class="btn btn-outline-success">Add to cart</button>
+          </div>
+        </div><img class="owl-img" src="hiddenfigures.jpg">
+      </div>
+
+      <div>
+        <div class="owl-text-overlay hidden-xs">
+          <h2 class="owl-title">Harry Potter and the Sorcerer's Stone</h2>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Paperback $15</p>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Hardcover $25</p>
+          <div class="buy">
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="button" class="btn btn-outline-success">Add to cart</button>
+          </div>
+        </div><img class="owl-img" src="harrypotter.jpg">
+      </div>
+
+      <div>
+        <div class="owl-text-overlay hidden-xs">
+          <h2 class="owl-title">Miss Peregrine's Home for Peculiar Children</h2>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Paperback $7</p>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Hardcover $10</p>
+          <div class="buy">
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="button" class="btn btn-outline-success">Add to cart</button>
+          </div>
+        </div><img class="owl-img" src="missperegrines.jpg">
+      </div>
+
+      <div>
+        <div class="owl-text-overlay hidden-xs">
+          <h2 class="owl-title">The Lightning Thief</h2>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Paperback $7</p>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Hardcover $10</p>
+          <div class="buy">
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="button" class="btn btn-outline-success">Add to cart</button>
+          </div>
+        </div><img class="owl-img" src="percyjackson.jpg">
+      </div>
+
+      <div>
+        <div class="owl-text-overlay hidden-xs">
+          <h2 class="owl-title">The Book Thief</h2>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Paperback $8</p>
+          <p class="owl-caption hidden-sm" style="font-family: 'Nunito', sans-serif;">Hardcover $10</p>
+          <div class="buy">
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="button" class="btn btn-outline-success">Add to cart</button>
+          </div>
+        </div><img class="owl-img" src="bookthief.jpg">
+      </div>
+
+    </div>
+  </div>
+  <hr>
+
+
+  <!-- Team -->
+  <a name="team"></a>
+  <div id="team" class="container">
+    <h3 style="font-family: 'Merriweather', serif;">Team</h3>
+    <div class="row">
+      <div class="col-3 team-profile">
+        <img class="team-profile" src="team1.PNG" width="250px" height="250px">
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>William Zhu - CEO</b></h4>
+        <p style="font-family: 'Nunito', sans-serif;" align="center">William has enjoyed reading for as long as he can remember. He wants NorthBay Bookstore to expand to an international level.</p>
+
+      </div>
+
+      <div class="col-3 team-profile">
+        <img class="team-profile" src="bm2.jpg" width="250px" height="250px">
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>Ryan Graind - CTO</b></h4>
+        <p style="font-family: 'Nunito', sans-serif;" align="center">Ryan loves knowledge. His dedication and experience obtained working as a librarian helps bring creativity and uniqueness. </p>
+      </div>
+
+      <div class="col-3 team-profile">
+        <img class="team-profile" src="bm7.jpg" width="250px" height="250px">
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>Annie Porter - COO</b></h4>
+        <p style="font-family: 'Nunito', sans-serif;" align="center">When William came to Annie with the idea of starting a bookstore, she was on board immediately. Northbay Bookstores wouldn't be the same without her.</p>
+      </div>
+
+      <div class="col-3 team-profile">
+        <img class="team-profile" src="bm5.jpg" width="250px" height="250px">
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>Jason Benson - CMO</b></h4>
+        <p style="font-family: 'Nunito', sans-serif;" align="center">Jason has helped improve NorthBay Bookstore's social media presence. His unique skills are invaluable. He is a very energetic person.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="team-links" class="links-container container">
+
+
+    <div class="row">
+      <div class="col-3 team-profile-links">
+        <i href="#" class="fab fa-linkedin-in team"></i>
+        <i href="#" class="fab fa-goodreads-g team"></i>
+        <i href="#" class="fab fa-facebook-f team"></i>
+      </div>
+
+      <div class="col-3 team-profile-links">
+        <i href="#" class="fab fa-linkedin-in team"></i>
+        <i href="#" class="fab fa-goodreads-g team"></i>
+        <i href="#" class="fab fa-facebook-f team"></i>
+      </div>
+
+      <div class="col-3 team-profile-links">
+        <i href="#" class="fab fa-linkedin-in team"></i>
+        <i href="#" class="fab fa-goodreads-g team"></i>
+        <i href="#" class="fab fa-facebook-f team"></i>
+      </div>
+
+      <div class="col-3 team-profile-links">
+        <i href="#" class="fab fa-linkedin-in team"></i>
+        <i href="#" class="fab fa-goodreads-g team"></i>
+        <i href="#" class="fab fa-facebook-f team"></i>
+      </div>
+    </div>
+
+  </div>
+
+
+  <hr>
+
+  <!--Services-->
+  <a name="services"></a>
+  <div id="services" class="container">
+    <h3 style="font-family: 'Merriweather', serif;">Services</h3>
+    <p style="font-family: 'Nunito', sans-serif;">Here are the features that our bookstore provides.</p>
+    <div class="row services-section scroll-animations">
+      <div class="col-sm-3">
+        <i class="fas fa-truck services-section wow fadeInDown"></i>
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>Delivery</b></h4>
+        <p class="services-section" style="font-family: 'Nunito', sans-serif;">Our bookstore takes online orders and delivers them straight to your home. Order over $20 and get free shipping!</p>
+      </div>
+
+      <div class="col-sm-3">
+        <i class="fas fa-language services-section wow fadeInDown"></i>
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>Multilingual</b></h4>
+        <p style="font-family: 'Nunito', sans-serif;">We offer the most popular books in several different languages and have multilingual workers on hand.</p>
+      </div>
+
+      <div class="col-sm-3">
+        <i class="fas fa-print services-section wow fadeInDown"></i>
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>Printing</b></h4>
+        <p style="font-family: 'Nunito', sans-serif;">Our bookstore prints and binds high-quality books at great prices. We also offer special deals for authors and publishers.</p>
+      </div>
+
+      <div class="col-sm-3">
+        <i class="fas fa-dollar-sign services-section wow fadeInDown"></i>
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>Used Books</b></h4>
+        <p style="font-family: 'Nunito', sans-serif;">Have some old books that you want to sell? Visit our bookstore location to sell your secondhand books at a great deal.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!--Trusted By-->
+  <a name="trusted"></a>
+  <div id="trusted" class="container">
+    <h3 style="font-family: 'Merriweather', serif;">Trusted By</h3>
+    <p style="font-family: 'Nunito', sans-serif;">Northbay Bookstore has been the go-to bookstore for these people and companies.</p>
+    <div class="row trusted-section">
+      <div class="col-sm-6">
+        <img class="trusted-by" src="sk2.jpg" width="200px" height="200px">
+        <p></p>
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>Stephen King</b></h4>
+        <p style="font-family: 'Nunito', sans-serif;">Stephen King trusts our bookstores and we<br>receive his latest novels ahead of release.</p>
+      </div>
+
+      <div class="col-sm-6">
+        <img class="trusted-by" src="harpercollins.PNG" width="200px" height="200px">
+        <h4 style="color: #C6AC8F; font-family: 'Merriweather', serif;"><b>HarperCollins</b></h4>
+        <p></p>
+        <p style="font-family: 'Nunito', sans-serif;">Authors associated with HarperCollins have printed<br> their books at our stores before.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Customer Review -->
+  <div id="review" class="container">
+    <div class="row">
+      <div class="col-md-6 response">
+        <h3 style="font-family: 'Merriweather', serif;">Customer Reviews</h3>
+        <p style="font-family: 'Nunito', sans-serif;">Hear some reviews from our loyal customers.</p>
+        <div class="col-md-6 pic">
+          <img class="rev" src="reviewwoman.jpg">
+          <p></p>
+          <h3 style="font-family: 'Nunito', sans-serif;">Alyssa, 26</h3>
+        </div>
+        <div class="col-md-6 reviewwom">
+          <p style="font-family: 'Nunito', sans-serif;">"The NorthBay Bookstore offered a substantial discount in comparison to other bookstores and a much better deal than the prices I received direct from the publisher! Extremely responsive and knowledgeable customer service as well!"</p>
+          <style>
+            .checked {
+              color: orange;
+            }
+          </style>
+          <p></p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+      </div>
+      <hr>
+      <p></p>
+      <div class="col-md-6 customer">
+        <h3 style="font-family: 'Merriweather', serif;">Special Events</h3>
+        <p style="font-family: 'Nunito', sans-serif;">Look out for these upcoming events at NorthBay Bookstore.</p>
+        <div class="row">
+          <div class="col-md-6 bday">
+            <img class="customer" src="bday3.jpg">
+            <div class="overlay">
+              <div class="text1" align="center">Independent Bookstore Day <br>
+                <p></p>
+                <p>4/25/2019</p>
+              </div>
+            </div>
+            <p></p>
+          </div>
+          <div class="col-md-6 semevent">
+            <img class="seminar" src="seminar.jpg">
+            <div class="overlay">
+              <div class="text2" align="center">Foreign Language Seminar <br>
+                <p></p>
+                <p>4/30/2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="container-fluid footer-distributed">
+    <p></p>
+    <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+      <div class="ct-footer-pre text-center-lg">
+        <p></p>
+        <div class="inner">
+          <span><h3 style="font-family: 'Merriweather', serif;">Sign up for our newsletter to receive special deals and offers.</h3></span>
+        </div>
+        <div class="inner">
+          <div class="form-group">
+            <span><input style="font-family: 'Nunito', sans-serif; width:250px" name="formfields[nl_email]" id="nl_email" class="validate[required] footer" placeholder="Enter your email address" type="text" value=""> <label for="nl_email" class="sr-only">Email Address</label> <button class = "btn btn-motive" style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="submit">Join</button></span>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="container-fluid">
+
+      <div class="footer-left row">
+
+        <div class="col-sm-3">
+          <div id="map" style="width:100%;height:350px" class="map"></div>
+          <script>
+            function myMap() {
+              var myCenter = new google.maps.LatLng(40.7068317, -74.0144205);
+              var mapCanvas = document.getElementById("map");
+              var mapOptions = { center: myCenter, zoom: 12 };
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+              var marker = new google.maps.Marker({ position: myCenter });
+              marker.setMap(map);
+
+              google.maps.event.addListener(marker, 'click', function() {
+                var pos = map.getZoom();
+                map.setZoom(9);
+                map.setCenter(marker.getPosition());
+                window.setTimeout(function() { map.setZoom(pos); }, 5000);
+              });
+            }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj-BoZZ5icL4B4lPBXlgumxTlCS2LQ1tc&callback=myMap"></script>
+          <p>
+
+          </p>
+        </div>
+
+        <div class="col-sm-3">
+          <br><br>
+          <div class="contact-us footer-icons">
+            <p style="font-family: 'Nunito', sans-serif;"><i class="fas fa-map-pin footer"></i><b>NorthBay Bookstore</b><br>49 Broadway<br>Manhattan, NY, 10562</p>
+            <p style="font-family: 'Nunito', sans-serif;"><i class="fas fa-envelope footer"></i> NorthBay.Bookstore@gmail.com</p>
+            <p style="font-family: 'Nunito', sans-serif;"><i class="fas fa-phone footer"></i> (917)-896-3821</p>
+            <span><a href="https://www.facebook.com/NorthBay-Bookstore-598973790568428/?modal=admin_todo_tour"><i class="fab fa-facebook social-media"></i></a><a href="https://twitter.com/NorthBayBookst2"><i class="fab fa-twitter-square social-media"></i></a><a href= "https://www.instagram.com/northbaybookstore/"><i class="fab fa-instagram social-media"></i></a></span>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <br><br>
+          <h4 style="font-size: 20px; font-family: 'Merriweather', serif;"><b>About Us</b></h4>
+          <div class="info">
+            <a href="#" style="font-family: 'Nunito', sans-serif;">Privacy Policy</a><br>
+            <a href="#" style="font-family: 'Nunito', sans-serif;">Terms and Conditions</a><br>
+            <a href="#" style="font-family: 'Nunito', sans-serif;">Our Staff</a><br>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <br><br>
+          <h4 style="font-size: 20px; font-family: 'Merriweather', serif;"><b>Contact Us</b></h4>
+
+          <form action="#" method="post" style="font-family: 'Nunito', sans-serif;">
+
+            <textarea class="message" name="message" placeholder="Message" style="border-radius: 5px;"></textarea><br>
+            <textarea class="name" name="name" placeholder="Name" style="border-radius: 5px;"></textarea><br>
+            <textarea class="email" name="email" placeholder="Email address" style="border-radius: 5px;"></textarea><br>
+            <button style="font-family: 'Nunito', sans-serif; font-size: 16px;" type="submit" class="btn btn-motive footer-button">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="./owl/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" type="text/javascript"></script>
+  <script src="./owl/OwlCarousel2-2.3.4/dist/owl.carousel.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      // Check if element is scrolled into view
+      function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+      }
+      // If element is scrolled into view, fade it in
+      $(window).scroll(function() {
+        $('.scroll-animations .animated').each(function() {
+          if (isScrolledIntoView(this) === true) {
+            $(this).addClass('fadeInLeft');
+          }
+        });
+      });
+    });
+  </script>
+  <!-- Wow.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <script>
+    $('#myModal').on('shown.bs.modal', function() {
+      $('#myInput').trigger('focus')
+    })
+  </script>
+</body>
+
+</html>
+
